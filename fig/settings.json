@@ -1,0 +1,19 @@
+{
+  "app.beta": false,
+  "app.hideMenubarIcon": false,
+  "app.preferredTerminal": "iTerm2",
+  "autocomplete.disable": false,
+  "autocomplete.fontFamily": "MesloLGS NF",
+  "autocomplete.fontSize": 15,
+  "autocomplete.height": 165,
+  "autocomplete.width": 300,
+  "autocomplete.hidePreviewWindow": false,
+  "autocomplete.immediatelyExecuteAfterSpace": false,
+  "autocomplete.insertSpaceAutomatically": false,
+  "autocomplete.scrollWrapAround": true,
+  "autocomplete.sortMethod": "recency",
+  "autocomplete.theme": "dark",
+  "cli.tips.disabled": false,
+  "integrations.hyper.disabled": true,
+  "integrations.terminal.disabled": true
+}

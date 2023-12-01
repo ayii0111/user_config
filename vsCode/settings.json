@@ -1,0 +1,252 @@
+{
+  // ---------- 基本設定 ----------
+  "update.mode": "none", // 不要自動更新
+  "editor.fontSize": 16, // 編輯器的字形大小
+  "editor.tabSize": 2, // tab設定為 2空格
+  "editor.detectIndentation": false, // 可以避免打開文件的模式,去覆蓋已經設置的模式,導致 js 縮進不符合預期
+  // "editor.guides.bracketPairs": "active", // 花括號配對線條,若產生衝突時可以關閉
+  "editor.showFoldingControls": "always", // 顯示摺疊的標記
+  "editor.parameterHints.enabled": false, // 避免顯式參數提示,而擋住畫面
+  "editor.hover.delay": 800, // 控制 hover 效果出現的時間,時間太短會容易擋住畫面
+  "editor.minimap.enabled": false, // 取消縮圖,可解省左右的版面
+  "explorer.openEditors.visible": 2, // 設定為 2 這樣新建臨時檔案要比較時,比較方便
+  "explorer.openEditors.minVisible": 2,
+  "explorer.compactFolders": false, // 在檔案欄位中,若有純巢狀目錄時,一樣會分層顯示
+  "explorer.confirmPasteNative": false, // 從系統複製貼上檔案進來,無須確認
+  "files.defaultLanguage": "${activeEditorLanguage}", // 新增檔案時,會依照當前檔案新增同類型檔案
+  "workbench.preferredDarkColorTheme": "Ghost Shell", // 配置亮色主題
+  "workbench.preferredLightColorTheme": "Solarized Light", // 配置暗色主題
+  "window.autoDetectColorScheme": true, // 自動偵測白天夜晚模式
+  // ---------- 編輯器的配置 ----------
+  "workbench.editor.focusRecentEditorAfterClose": false, // 關閉編輯器標籤時,會聚焦於上一個使用的標籤
+  "workbench.editor.tabSizing": "shrink", // 編輯器標籤會隨著空間不夠而縮小
+  "workbench.editor.pinnedTabSizing": "compact", // 標籤尺寸配置
+  "editor.linkedEditing": true, // html 標籤成對修改
+  "files.trimTrailingWhitespace": true, // 行末空格自動刪除
+  "workbench.startupEditor": "none", // 啟動vscode時,顯示的編輯器
+  "editor.accessibilitySupport": "off", // 視障輔助功能關閉
+  "explorer.confirmDelete": false, // 刪除檔按時不確認
+  "explorer.confirmDragAndDrop": false, // 在檔案總管拖放檔按時,不再顯示確認框
+  "git.openRepositoryInParentFolders": "never", // 不會在上層目錄找 git 儲存庫
+  "editor.stickyScroll.enabled": false, //
+  "editor.lightbulb.enabled": "off", // 關閉快速修復提示
+  // ---------- 代碼補全提示 ----------
+  "tabnine.experimentalAutoImports": true, // tabnine插件,自動引入模組
+  "javascript.suggest.completeFunctionCalls": true, // 自動補全函式時,一併補全括號
+  "typescript.suggest.completeFunctionCalls": true, // 自動補全函式時,一併補全括號
+  "editor.suggestSelection": "recentlyUsedByPrefix", // 會根據你最近的選擇或者是根據當前輸入的前綴和最近的選擇來排序建議
+  "editor.snippetSuggestions": "top", //將代碼提示snippet顯示在最頂端
+  "vue.autoInsert.dotValue": true, // vue使用 ref便數時,自動補全 .value
+  "editor.quickSuggestionsDelay": 5, // 見提彈出的延遲,默認為 10
+  // "editor.inlineSuggest.suppressSuggestions": true, // 內連提示的抑制（可以避免提示過度頻繁出現）
+  // "emmet.triggerExpansionOnTab": true, // emmet 以 tab 展開
+  "emmet.variables": {
+    "lang": "zh-Hant-TW",
+    "charset": "UTF-8"
+  }, // 使用!代碼片段時,lang的設定,以及其他設定
+  // diff 插件配置
+  "semanticdiff.closeOriginalTab": true, // 指定切換到 SemanticDiff 時是否應關閉原始 diff 選項卡
+  // ---------- 終端配置 ----------
+  "terminal.integrated.fontFamily": "MesloLGS NF", // PowerlevelXk 系列的字體,給終端主題使用的
+  "terminal.integrated.fontSize": 14, // 終端機字體大小
+  // ---------- shell語言配置 ----------
+  "shell-syntax.defaultShell": "zsh", // shell-syntax插件設定
+  // ---------- 格式化配置 begin ----------
+  "editor.formatOnSave": true, // formatOnSave 儲存時自動格式化
+  "files.autoSave": "afterDelay", // 延時自動儲存
+  "files.autoSaveDelay": 5000, // 延時設定毫秒
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  }, // 所有lint類型插件,可在儲存時自動修復錯誤
+  "javascript.format.semicolons": "remove", // 移除js語句的分號
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, // 在函數名後面加上括號,類似這種形式 foo () {}
+  "prettier.semi": false, // 移除prettier的分號
+  "prettier.trailingComma": "none", // 移除prettier的尾逗號
+  "prettier.singleQuote": true, // 使用單引號
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "[html]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // ---------- 格式化配置 end ----------
+  "liveServer.settings.donotShowInfoMsg": true, // liveServer插件不要跳提醒
+  "code-runner.clearPreviousOutput": true, // code-runner插件,會在運行代碼時,清除掉上次運行的結果
+  "code-runner.executorMapByGlob": {
+    "*.zsh": "zsh"
+  },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1",
+    "CW_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
+  },
+  "workbench.colorTheme": "Ghost Shell", // 套用主題
+  "workbench.iconTheme": "material-icon-theme", // icon主題插件
+  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+    "cypress": false,
+    "live-server-extension": true,
+    "live-preview-extension": true
+  }, // console-ninja插件設定
+  // ---------- stylelint配置 begin ----------
+  "stylelint.configFile": ".stylelintrc.js", // stylelint套件,使用專案中的設定檔
+  // 以下關閉vscode內建的樣式靜態檢查
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": [
+    "scss",
+    "vue"
+  ], // 打開stylelint插件的樣式檢查
+  // ---------- stylelint配置 end ----------
+  // ---------- explicit Folding 插件配置 begin ----------
+  "editor.foldingStrategy": "auto",
+  "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
+  "explicitFolding.rules": {
+    // 若起始語句，同時符合兩個匹配，就會產生衝突
+    "vue": [
+      {
+        // 統一匹配 { 結尾的起始語句，同時匹配 } 與 }) 結尾的結束語句
+        "beginRegex": "^(\\s*).*{$",
+        "endRegex": "^\\1\\}\\)?"
+      },
+      {
+        // 匹配 do...while 循環語句
+        "beginRegex": "^(\\s*)do {",
+        "endRegex": "^\\1\\} while (.+)$"
+      },
+      {
+        // 匹配陣列定義
+        "beginRegex": "^(\\s*)(const|var|let) .+ = \\[$",
+        "endRegex": "^\\1\\]"
+      },
+      {
+        "beginRegex": "^import\\b",
+        "whileRegex": "^(?:import\\b|\\/\\/)",
+      },
+      {
+        // [] 裡面的後面要添加一個 -,因為 vue 的元件的標籤裡,可能會包含 -
+        // \\b  代表匹配單詞邊界
+        // [^>]*> 代表匹配除了 > 之外的任何字符
+        // "beginRegex": "<([a-zA-Z-]+)\\b[^>\\n]*>",
+        // \\1 代表一個反向引用,它引用第一個括號捕獲的內容
+        // "endRegex": "<\\/\\1\\b>"
+        "beginRegex": "^\\s*<([a-zA-Z-]+)\\b[^>\\n]*>",
+        "endRegex": "<\\/\\1\\b>"
+      }
+    ]
+  },
+  // ---------- explicit Folding 插件配置 end ----------
+  "betterFolding.chainFoldingRanges": false, // 摺疊後僅會有一行
+  "prettier.bracketSameLine": true, // html的「>」不作為行開頭
+  "html.format.wrapLineLength": 0, // 內建html格式化時,不限制一行的長度
+  "htmltagwrap.tag": "？", // htmltagwrap插件的包裹標籤
+  "cssPeek.peekToExclude": [
+    ".history",
+    "node_modules"
+  ], // cssPeek插件,排除歷史目錄與node模組的文件
+  // ---------- peacock插件配置 begin ----------
+  "peacock.affectTitleBar": false, // 上方邊條不套用peacock插件效果
+  // 可設定目錄名稱顏色
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#dd0531"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#61dafb"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Svelte Orange",
+      "value": "#ff3d00"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  // ---------- peacock插件配置 end ----------
+  "folder-path-color.folders": [
+    {
+      "path": "node_modules",
+      "color": "green"
+    }
+  ], // Folder Path Color 插件設定
+  // ---------- Apc 插件配置 ----------
+  // 左邊欄位格式不見就執行指令：Enable Apc extension
+  "apc.activityBar": {
+    "position": "bottom",
+    "size": 40,
+    "itemSize": 36,
+    "itemMargin": 7
+  }, // 設定左工具欄位的位置和大小
+  "apc.listRow": {
+    "lists": [
+      "results",
+      "scm-view",
+      "outline-tree",
+      "open-editors",
+      "customview-tree",
+      "quick-input-list",
+      "debug-breakpoints",
+      "debug-view-content",
+      "explorer-folders-view",
+    ],
+    "height": 30,
+    "fontSize": 12.5
+  }, // 設定列表的高度和字體大小
+  // ---------- animations 插件配置  ----------
+  // 鼠標動畫不見就執行指令：Animations: Install Animations
+  // 若執行無效，就先執行：Enable Apc extension
+  "animations.Enabled": true, // 啟用動畫
+  "apc.imports": [
+    "file://${userHome}/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+  ], // 安裝動畫插件的css和js
+  "animations.Install-Method": "Apc Customize UI++", // 選擇使用的依賴
+  "animations.CursorAnimation": true, // 啟用游標動畫
+  "animations.CursorAnimationoptions": {
+    "CoLor": "#8e8e8e", // 設定游標動畫的顏色
+    "TrailLength": 4 // 設定游標動畫的尾迹長度
+  },
+  "animations.Scrolling": "Slide", // 滾動時的動畫
+  "animations.Durations": {
+    "Command-Palette": 300,
+    "Scrolling": 300,
+    "Active": 150
+  },
+  // ---------- turboConsoleLog 插件配置  ----------
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "turboConsoleLog.logMessageSuffix": "：",
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "turboConsoleLog.logMessagePrefix": "💊 變數",
+}

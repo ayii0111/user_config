@@ -1,0 +1,103 @@
+
+
+# setopt配置（即 shell行為設定）
+setopt interactivecomments  # 可在shell對話中使用註解
+setopt nonomatch  # 使用*而沒有匹配時，不會報錯
+setopt EXTENDED_GLOB  # 啟用強化萬用字元
+
+
+# eval "$(zoxide init zsh)"
+# eval "$(starship init zsh)"
+eval "$(lua $(brew --prefix z.lua)/share/z.lua/z.lua --init zsh)"
+
+# bindkey 配置
+# 放在欓尾也可以避免熱鍵設定被覆蓋
+# 下面刪除整行的熱鍵，會對自動補全造成 bug
+# bindkey '^J' backward-kill-line
+
+
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+export JAVA_HOME='/opt/homebrew/Cellar/openjdk/21.0.2/libexec/openjdk.jdk/Contents/Home'
+
+
+# 歷史命令配置
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
+# yazi 的額外功能（使用函式來封裝）
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+# pnpm
+export PNPM_HOME="/Users/ayii/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+
+eval "$(zellij setup --generate-auto-start zsh)"
+eval "$(starship init zsh)"
+
+# ZELLIJ_AUTO_ATTACH="true"
+# ZELLIJ_AUTO_EXIT="false"
+# if [[ -z "$ZELLIJ" ]]; then
+# echo "111"
+#     if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
+#     echo "222"
+#         zellij attach -c workSpace
+#     else
+#     echo "333"
+#         zellij
+#     fi
+
+#     if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
+#     echo "444"
+#         exit
+#     fi
+# fi
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+
+
+
+
+
