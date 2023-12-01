@@ -1,0 +1,46 @@
+{
+  "console.log()": {
+    "prefix": "console.log()",
+    "body": "console.log('$1',$2)",
+    "description": "description for console.log()"
+  },
+  "() => {} 回調函式": {
+    "prefix": "callBack",
+    "body": [
+      "() => {",
+      "\t$1",
+      "}"
+    ],
+    "description": "description for () => {} 回調函式"
+  },
+  "try/catch": {
+    "prefix": "try/catch",
+    "body": [
+      "try {",
+      "  const result = await foo()",
+      "  console.log('result: ',result)",
+      "} catch (e) {",
+      "  console.error('錯誤：', e)",
+      "}"
+    ],
+    "description": "description for try/catch"
+  },
+  "await to()": {
+    "prefix": "await to()",
+    "body": [
+      "const [e, result] = await to($1)",
+      "e ? console.log('$1 失敗', e) : console.log('$1 成功')"
+    ],
+    "description": "description for await to()"
+  },
+  "// ts-worksheet": {
+    "prefix": "// ts-worksheet",
+    "body": "// ts-worksheet",
+    "description": "description for // ts-worksheet"
+  },
+  "//ts-worksheet-with-variables": {
+    "prefix": "//ts-worksheet-with-variables",
+    "body": "//ts-worksheet-with-variables",
+    "description": "description for // ts-worksheet"
+  }
+}

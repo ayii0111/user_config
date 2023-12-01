@@ -1,0 +1,69 @@
+{
+	"zsh 檔宣告": {
+		"prefix": "!z",
+		"body": "#! /bin/zsh",
+		"description": "#! /bin/zsh"
+	},
+
+	"echo": {
+		"prefix": "echo",
+		"body": "echo \"$1\"",
+		"description": "echo"
+	},
+	"gsed": {
+		"prefix": "gsed",
+		"body": "gsed \"$1\"",
+		"description": "gsed"
+	},
+	"選取範圍：第一行 > 匹配行": {
+		"prefix": "gs 選取範圍：第一行 > 匹配行",
+		"body": "/$1/,\\$! {$2} 選取範圍：第一行 > 匹配行$3",
+		"description": "//,$! 選取範圍：第一行 > 匹配行"
+	},
+	"選取首次匹配行": {
+		"prefix": "gs 僅選取首次匹配行",
+		"body": "0,/$1/{// $2}; 僅選取首次匹配行 $3",
+		"description": "0,// 僅選取首次匹配行"
+	},
+	"刪空行": {
+		"prefix": "gs 刪空行",
+		"body": "/^$/d;",
+		"description": "/^$/d 刪空行"
+	},
+	"行前插入": {
+		"prefix": "gs 行前插入",
+		"body": "s|^|$1|;",
+		"description": "s^ 行前插入"
+	},
+	"行後插入": {
+		"prefix": "gs 行後插入",
+		"body": "s|$|$1|;",
+		"description": "s$ 行後插入"
+	},
+
+	"gsed 段落插入 \\": {
+		"prefix": "gs 段落插入 \\",
+		"body": [
+			"local $1=\"",
+			"$2",
+			"\"",
+			"# 可避免字串變數中的換行，造成 gsed 無法寫入",
+      "$1=$(echo \"$$1\" | gsed ':a;N;$!ba;s/\\n/\\\\\\n/g')"
+		],
+		"description": "description for gsed 段落插入 \\"
+	},
+  "不顯示報錯資訊": {
+		"prefix": "error (2> /dev/null)",
+		"body": "$1 2> /dev/null",
+		"description": "2> /dev/null 不顯示報錯資訊"
+	},
+	"bp 斷點觀察": {
+		"prefix": "bp 斷點觀察",
+		"body": [
+			"# 斷點觀察：提示觀察訊息，設定觀察時間",
+			"echo \"$1\"",
+			"sleep $2"
+		],
+		"description": "bp 斷點觀察"
+	}
+}

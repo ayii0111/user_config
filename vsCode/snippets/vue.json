@@ -1,0 +1,26 @@
+{
+	"<setup lang>": {
+		"prefix": "setup lang",
+		"body": "setup lang=\"ts\"",
+		"description": "description for setup lang"
+	},
+	".vue 檔": {
+		"prefix": ".vue",
+		"body": [
+			"<script setup lang=\"ts\">",
+			"$2",
+			"</script>",
+			"",
+			"<template>",
+			"  <div>",
+			"    $1",
+			"  </div>",
+			"</template>",
+			"<style scoped lang=\"scss\">",
+			"$3",
+			"</style>"
+		],
+		"description": "description for .vue 檔"
+	},
+
+}

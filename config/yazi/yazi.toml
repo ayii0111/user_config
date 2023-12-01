@@ -1,0 +1,10 @@
+[manager]
+ratio = [2, 3, 3]
+sort_by = "modified"
+sort_reverse = true
+mouse_events = ["click", "scroll", "drag"]
+
+[opener]
+edit = [
+	{ run = 'code "$@"', block = true },
+]

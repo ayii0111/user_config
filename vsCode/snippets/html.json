@@ -1,0 +1,7 @@
+{
+  "bs-btn-a": {
+		"prefix": "bs-btn-a",
+		"body": "<a class=\"btn btn-primary\" href=\"#\" role=\"button\">$1</a>",
+		"description": "bs-btn-a"
+	}
+}
