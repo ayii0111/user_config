@@ -374,5 +374,5 @@
   {
     "key": "shift+cmd+r",
     "command": "workbench.action.reloadWindow"
-  }
+  },
 ]

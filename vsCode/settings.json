@@ -71,7 +71,7 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[shellscript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "Codeium.codeium"
   },
   "[markdown]": {
     "editor.formatOnSave": false
@@ -90,7 +90,7 @@
     "CW_NEW_SESSION": "1",
     "Q_NEW_SESSION": "1"
   },
-  "workbench.colorTheme": "Ghost Shell", // 套用主題
+  "workbench.colorTheme": "Solarized Light", // 套用主題
   "workbench.iconTheme": "material-icon-theme", // icon主題插件
   "console-ninja.toolsToEnableSupportAutomaticallyFor": {
     "cypress": false,
@@ -110,7 +110,7 @@
   // ---------- stylelint配置 end ----------
   // ---------- explicit Folding 插件配置 begin ----------
   "editor.foldingStrategy": "auto",
-  "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
+  // "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding", // 預設不要使用 explicitFolding 插件，否則沒設定的檔案都沒有摺疊規則
   "explicitFolding.rules": {
     // 若起始語句，同時符合兩個匹配，就會產生衝突
     "vue": [
@@ -249,4 +249,6 @@
   "turboConsoleLog.logMessageSuffix": "：",
   "turboConsoleLog.insertEnclosingFunction": false,
   "turboConsoleLog.logMessagePrefix": "💊 變數",
+  "shfmt.executablePath": "shfmt  -l -w",
+  "security.workspace.trust.untrustedFiles": "newWindow",
 }

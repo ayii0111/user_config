@@ -10,7 +10,7 @@
 		"description": "description for defineEmits()"
 	},
 	"() => {} 回調函式": {
-		"prefix": "callBack",
+		"prefix": "()",
 		"body": [
 			"() => {",
 			"\t$1",
@@ -61,6 +61,47 @@
 		"prefix": "vimpov",
 		"body": "import type { $1 } from \"vue\"",
 		"description": "vimpv"
+	},
+	"函式宣告式": {
+		"prefix": "function",
+		"body": [
+			"function $1 (){",
+			"  $2",
+			"}"
+		],
+		"description": "function"
+	},
+	"函式箭頭式": {
+		"prefix": "=>",
+		"body": [
+			"const $1 = () => {",
+			"  $2",
+			"}"
+		],
+		"description": "=>"
+	},
+	"async 函式宣告式": {
+		"prefix": "async function",
+		"body": [
+			"async function $1 (){",
+			"  $2",
+			"}"
+		],
+		"description": "async function"
+	},
+	"async 函式箭頭式": {
+		"prefix": "=> async",
+		"body": [
+			"const $1 = async () => {",
+			"  $2",
+			"}"
+		],
+		"description": "async =>"
+	},
+	"import 一般引用": {
+		"prefix": "import",
+		"body": "import $2 from '$1'",
+		"description": "import"
 	}
 
 }
