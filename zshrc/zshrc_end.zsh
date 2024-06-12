@@ -59,26 +59,9 @@ esac
 
 
 eval "$(zellij setup --generate-auto-start zsh)"
-eval "$(starship init zsh)"
-
-# ZELLIJ_AUTO_ATTACH="true"
-# ZELLIJ_AUTO_EXIT="false"
-# if [[ -z "$ZELLIJ" ]]; then
-# echo "111"
-#     if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
-#     echo "222"
-#         zellij attach -c workSpace
-#     else
-#     echo "333"
-#         zellij
-#     fi
-
-#     if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
-#     echo "444"
-#         exit
-#     fi
-# fi
-
+# eval "$(oh-my-posh init zsh)"
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/pure.omp.json)"
+# eval "$(starship init zsh)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
