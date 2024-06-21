@@ -80,9 +80,11 @@ alias   gmota='source ~/UserScripts/git/gmota.zsh'
 # file_manager 目錄
 alias molt='source ~/UserScripts/file_manager/molt.zsh'                  # 剝去當前目錄
 alias   mc='source ~/UserScripts/file_manager/mkdir_cd.zsh'              # 建立並進入一個目錄
-alias  cpp='source ~/UserScripts/file_manager/custom_cp.zsh'             # 複製到某一目錄時，預先建立該目錄
+alias   cp='source ~/UserScripts/file_manager/cp.zsh'             # 複製到某一目錄時，預先建立該目錄
 alias rmal='source ~/UserScripts/file_manager/remove_all.zsh'            # 刪除當前目錄與目錄中的檔案
 alias  ren='source ~/UserScripts/file_manager/rename.zsh'                # 更改當前目錄名稱
+alias touch='source ~/UserScripts/file_manager/touch.zsh'
+
 
 
 zenpi() {

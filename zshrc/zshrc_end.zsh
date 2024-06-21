@@ -59,9 +59,10 @@ esac
 
 
 eval "$(zellij setup --generate-auto-start zsh)"
+# zellij --layout /Users/ayii/.config/zellij/config.kdl
 # eval "$(oh-my-posh init zsh)"
 eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/pure.omp.json)"
-# eval "$(starship init zsh)"
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
