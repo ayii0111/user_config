@@ -4,10 +4,11 @@ source ~/UserScripts/hook/preec.zsh
 source ~/UserScripts/hook/brew_packages.zsh
 source ~/UserScripts/hook/conda_env_hook.zsh
 
-# package_manager目錄
-alias concr='source ~/UserScripts/package_manager/conda_create_env.zsh'  # conda 環境建立
-alias conrm='source ~/UserScripts/package_manager/conda_remove_env.zsh'  # conda 環境移除
-alias brewi='source ~/UserScripts/package_manager/brew_pack_install.zsh' # brew 包列安裝
+# pkg_mgr目錄
+alias concr='source ~/UserScripts/pkg_mgr/conda_create_env.zsh'  # conda 環境建立
+alias conrm='source ~/UserScripts/pkg_mgr/conda_remove_env.zsh'  # conda 環境移除
+alias brewi='source ~/UserScripts/pkg_mgr/brew_pack_install.zsh' # brew 包列安裝
+alias npch='source ~/UserScripts/pkg_mgr/npch.zsh'
 
 # vite 目錄
 alias      vconf='source ~/UserScripts/vite/vconf.zsh'                # 快速設定 vite 基本設定
@@ -36,7 +37,6 @@ alias        vcf='source ~/UserScripts/vite/vue-clerk&firebase.zsh'
 alias   cb='source ~/UserScripts/utils/config_backup.zsh'                # 設定檔備份
 alias hali='source ~/UserScripts/utils/hash_alignment.zsh'               # hash字符對齊
 alias fins='source ~/UserScripts/utils/find_installed.zsh'               # 已安裝軟件地毯搜尋
-alias   ch='source ~/UserScripts/utils/check_scripts_path.zsh'           # 確認腳本路徑在 README中存在
 alias    c='source ~/UserScripts/utils/vscode_cli.zsh'                   # vscode的指令改寫
 alias  sni='source ~/UserScripts/utils/sni.zsh'
 
@@ -48,6 +48,8 @@ alias  ccon='source ~/UserScripts/scr_con/ccon.zsh'
 alias  cscr='source ~/UserScripts/scr_con/cscr.zsh'
 alias  pcon='source ~/UserScripts/scr_con/pcon.zsh'
 alias  pscr='source ~/UserScripts/scr_con/pscr.zsh'
+alias chscr='source ~/UserScripts/utils/check_scripts_path.zsh'           # 確認腳本路徑在 README中存在
+
 
 # appleScript 目錄
 alias   re='source ~/UserScripts/appleScript/re.zsh'                     # Mac iterm2重啟

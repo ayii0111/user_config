@@ -398,4 +398,14 @@
     "key": "alt+q",
     "command": "quokka.toggle"
   },
+  {
+    "key": "ctrl+q",
+    "command": "quokka.debug",
+    "when": "activeEditor && quokka.isActiveEditorRunningQuokka && !inDebugMode && !quokka.isLiveShareClient && !quokka.traceBeingNavigated || activeEditor && !inDebugMode && !quokka.isLiveShareClient && !quokka.traceBeingNavigated && resourceScheme == 'quokka-code-timeline'"
+  },
+  {
+    "key": "shift+f5",
+    "command": "-quokka.debug",
+    "when": "activeEditor && quokka.isActiveEditorRunningQuokka && !inDebugMode && !quokka.isLiveShareClient && !quokka.traceBeingNavigated || activeEditor && !inDebugMode && !quokka.isLiveShareClient && !quokka.traceBeingNavigated && resourceScheme == 'quokka-code-timeline'"
+  }
 ]

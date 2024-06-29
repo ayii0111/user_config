@@ -102,6 +102,10 @@
 		"prefix": "import",
 		"body": "import $2 from '$1'",
 		"description": "import"
-	}
-
+	},
+	"const r = 快速賦值檢視": {
+		"prefix": "rr",
+		"body": "const r$1 = ",
+		"description": "description for cr"
+	},
 }

@@ -144,9 +144,7 @@
         "endRegex": "<\\/\\1\\b>"
       }
     ]
-  },
-  // ---------- explicit Folding 插件配置 end ----------
-  "betterFolding.chainFoldingRanges": false, // 摺疊後僅會有一行
+  }, // 摺疊後僅會有一行
   "prettier.bracketSameLine": true, // html的「>」不作為行開頭
   "html.format.wrapLineLength": 0, // 內建html格式化時,不限制一行的長度
   "htmltagwrap.tag": "？", // htmltagwrap插件的包裹標籤
@@ -251,4 +249,7 @@
   "turboConsoleLog.logMessagePrefix": "💊 變數",
   "shfmt.executablePath": "shfmt  -l -w",
   "security.workspace.trust.untrustedFiles": "newWindow",
+  "betterFolding.showFoldedBodyLinesCount": false,
+  "betterFolding.showOnlyRegionsDescriptions": true,
+  "codeium.enableCodeLens": false,
 }
