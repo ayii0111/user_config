@@ -1,14 +1,14 @@
-# hook 目錄
+# zsh_hook 目錄
 # 將前次指令與執行結果儲存於 last_command、last_exit_code 全域變數
-source ~/UserScripts/hook/preec.zsh
-source ~/UserScripts/hook/brew_packages.zsh
-source ~/UserScripts/hook/conda_env_hook.zsh
+source ~/UserScripts/zsh_hook/preec.zsh
+source ~/UserScripts/zsh_hook/brew_packages.zsh
+source ~/UserScripts/zsh_hook/conda_env_hook.zsh
 
 # pkg_mgr目錄
 alias concr='source ~/UserScripts/pkg_mgr/conda_create_env.zsh'  # conda 環境建立
 alias conrm='source ~/UserScripts/pkg_mgr/conda_remove_env.zsh'  # conda 環境移除
 alias brewi='source ~/UserScripts/pkg_mgr/brew_pack_install.zsh' # brew 包列安裝
-alias npch='source ~/UserScripts/pkg_mgr/npch.zsh'
+alias  npch='source ~/UserScripts/pkg_mgr/npch.zsh'
 
 # vite 目錄
 alias      vconf='source ~/UserScripts/vite/vconf.zsh'                # 快速設定 vite 基本設定
@@ -42,19 +42,19 @@ alias  sni='source ~/UserScripts/utils/sni.zsh'
 
 
 # scr_con 目錄
-alias  scr='source ~/UserScripts/scr_con/scr.zsh'
-alias  con='source ~/UserScripts/scr_con/con.zsh'
+alias   scr='source ~/UserScripts/scr_con/scr.zsh'
+alias   con='source ~/UserScripts/scr_con/con.zsh'
 alias  ccon='source ~/UserScripts/scr_con/ccon.zsh'
 alias  cscr='source ~/UserScripts/scr_con/cscr.zsh'
 alias  pcon='source ~/UserScripts/scr_con/pcon.zsh'
 alias  pscr='source ~/UserScripts/scr_con/pscr.zsh'
-alias chscr='source ~/UserScripts/utils/check_scripts_path.zsh'           # 確認腳本路徑在 README中存在
+alias chscr='source ~/UserScripts/scr_con/chscr.zsh'           # 確認腳本路徑在 README中存在
 
 
 # appleScript 目錄
-alias   re='source ~/UserScripts/appleScript/re.zsh'                     # Mac iterm2重啟
-alias   dmo='source ~/UserScripts/appleScript/dmo.zsh'                     # Mac iterm2重啟
-alias   lmo='source ~/UserScripts/appleScript/lmo.zsh'                     # Mac iterm2重啟
+alias  re='source ~/UserScripts/appleScript/re.zsh'                     # Mac iterm2重啟
+alias dmo='source ~/UserScripts/appleScript/dmo.zsh'                     # Mac iterm2重啟
+alias lmo='source ~/UserScripts/appleScript/lmo.zsh'                     # Mac iterm2重啟
 
 
 # git 目錄
@@ -79,13 +79,13 @@ alias     gwa='source ~/UserScripts/git/gwa.zsh'
 alias     gwd='source ~/UserScripts/git/gwd.zsh'
 alias   gmota='source ~/UserScripts/git/gmota.zsh'
 
-# file_manager 目錄
-alias molt='source ~/UserScripts/file_manager/molt.zsh'                  # 剝去當前目錄
-alias   mc='source ~/UserScripts/file_manager/mkdir_cd.zsh'              # 建立並進入一個目錄
-alias   cp='source ~/UserScripts/file_manager/cp.zsh'             # 複製到某一目錄時，預先建立該目錄
-alias rmal='source ~/UserScripts/file_manager/remove_all.zsh'            # 刪除當前目錄與目錄中的檔案
-alias  ren='source ~/UserScripts/file_manager/rename.zsh'                # 更改當前目錄名稱
-alias touch='source ~/UserScripts/file_manager/touch.zsh'
+# file_mgr 目錄
+alias  molt='source ~/UserScripts/file_mgr/molt.zsh'                  # 剝去當前目錄
+alias    mc='source ~/UserScripts/file_mgr/mkdir_cd.zsh'              # 建立並進入一個目錄
+alias    cp='source ~/UserScripts/file_mgr/cp.zsh'             # 複製到某一目錄時，預先建立該目錄
+alias  rmal='source ~/UserScripts/file_mgr/remove_all.zsh'            # 刪除當前目錄與目錄中的檔案
+alias   ren='source ~/UserScripts/file_mgr/rename.zsh'                # 更改當前目錄名稱
+alias touch='source ~/UserScripts/file_mgr/touch.zsh'
 
 
 
