@@ -34,7 +34,7 @@ alias        vcf='source ~/UserScripts/vite/vue-clerk&firebase.zsh'
 
 
 # utils 目錄
-alias   cb='source ~/UserScripts/utils/config_backup.zsh'                # 設定檔備份
+alias   bcon='source ~/UserScripts/scr_con/bcon.zsh'                # 設定檔備份
 alias hali='source ~/UserScripts/utils/hash_alignment.zsh'               # hash字符對齊
 alias fins='source ~/UserScripts/utils/find_installed.zsh'               # 已安裝軟件地毯搜尋
 alias    c='source ~/UserScripts/utils/vscode_cli.zsh'                   # vscode的指令改寫
@@ -78,6 +78,9 @@ alias     glg='source ~/UserScripts/git/glg.zsh'
 alias     gwa='source ~/UserScripts/git/gwa.zsh'
 alias     gwd='source ~/UserScripts/git/gwd.zsh'
 alias   gmota='source ~/UserScripts/git/gmota.zsh'
+alias    gsma='source ~/UserScripts/git/gsma.zsh'
+alias   gsmab='source ~/UserScripts/git/gsmab.zsh'
+alias    gsmd='source ~/UserScripts/git/gsmd.zsh'
 
 # file_mgr 目錄
 alias  molt='source ~/UserScripts/file_mgr/molt.zsh'                  # 剝去當前目錄

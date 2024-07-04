@@ -200,6 +200,12 @@
       "color": "green"
     }
   ], // Folder Path Color 插件設定
+  // bookmarks 插件配置
+  "workbench.colorCustomizations": {
+    "bookmarks.lineBackground": "#157EFB22", // 高亮標籤行
+    "bookmarks.lineBorder": "#FF0000", // 標籤行上框線
+    "bookmarks.overviewRuler": "#157EFB88" // 左側欄書籤顏色設定
+  },
   // ---------- Apc 插件配置 ----------
   // 左邊欄位格式不見就執行指令：Enable Apc extension
   "apc.activityBar": {
@@ -252,4 +258,5 @@
   "betterFolding.showFoldedBodyLinesCount": false,
   "betterFolding.showOnlyRegionsDescriptions": true,
   "codeium.enableCodeLens": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
 }

@@ -10,8 +10,7 @@ setopt EXTENDED_GLOB  # 啟用強化萬用字元
 # eval "$(starship init zsh)"
 eval "$(lua $(brew --prefix z.lua)/share/z.lua/z.lua --init zsh)"
 
-# bindkey 配置
-# 放在欓尾也可以避免熱鍵設定被覆蓋
+# bindkey 配置（放在檔尾可以避免熱鍵設定被覆蓋）
 # 下面刪除整行的熱鍵，會對自動補全造成 bug
 # bindkey '^J' backward-kill-line
 
@@ -22,6 +21,7 @@ export JAVA_HOME='/opt/homebrew/Cellar/openjdk/21.0.2/libexec/openjdk.jdk/Conten
 
 
 # 歷史命令配置
+# 抄來的，改天有再研究，再補上影片來源
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
@@ -58,9 +58,10 @@ esac
 # pnpm end
 
 
-eval "$(zellij setup --generate-auto-start zsh)"
-# zellij --layout /Users/ayii/.config/zellij/config.kdl
-# eval "$(oh-my-posh init zsh)"
+# 暫不啟用 zellij (距分割視窗的功能，但滑鼠選取變難用了)
+# eval "$(zellij setup --generate-auto-start zsh)"
+
+# 套用了 pure 主題，且 pure 也有個人化修改
 eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/pure.omp.json)"
 
 
