@@ -1,7 +1,7 @@
 {
 	"console.log()": {
 		"prefix": "console.log()",
-		"body": "console.log('$1')",
+		"body": "console.log($1)",
 		"description": "description for console.log()"
 	},
 	"defineEmits()": {
@@ -9,8 +9,8 @@
 		"body": "const emit = defineEmits(['$1'])",
 		"description": "description for defineEmits()"
 	},
-	"() => {} 回調函式": {
-		"prefix": "callBack",
+	"() => {} 回調箭頭": {
+		"prefix": "=>",
 		"body": [
 			"() => {",
 			"\t$1",
@@ -39,7 +39,7 @@
 		"description": "description for await to()"
 	},
 	"onMounted 週期": {
-		"prefix": "vonMounted",
+		"prefix": "vMounted",
 		"body": [
 			"onMounted(() => {",
 			"  $1",
@@ -61,6 +61,52 @@
 		"prefix": "vimpov",
 		"body": "import type { $1 } from \"vue\"",
 		"description": "vimpv"
-	}
+	},
+	"函式宣告式": {
+		"prefix": "function",
+		"body": [
+			"function $1 (){",
+			"  $2",
+			"}"
+		],
+		"description": "function"
+	},
+	"定義箭頭函式": {
+		"prefix": "=>",
+		"body": [
+			"const $1 = () => {",
+			"  $2",
+			"}"
+		],
+		"description": "=>"
+	},
+	"async 函式宣告式": {
+		"prefix": "async function",
+		"body": [
+			"async function $1 (){",
+			"  $2",
+			"}"
+		],
+		"description": "async function"
+	},
+	"async 定義箭頭函式": {
+		"prefix": "=> async",
+		"body": [
+			"const $1 = async () => {",
+			"  $2",
+			"}"
+		],
+		"description": "async =>"
+	},
+	"import 一般引用": {
+		"prefix": "uimport",
+		"body": "import $2 from '$1'",
+		"description": "import"
+	},
+	"const r = 快速賦值檢視": {
+		"prefix": "rr",
+		"body": "const r$1 = ",
+		"description": "description for cr"
+	},
 
 }

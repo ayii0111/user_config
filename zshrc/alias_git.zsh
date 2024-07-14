@@ -141,8 +141,10 @@ alias ginfo='git info --no-config'
 
 # 子模組
 alias gsm='git submodule' # gsm 腳本：檢視當前倉庫中的子模組
-# gsma 腳本：建立子模組環境
+
+# gsma 腳本：當前倉庫中建立子模組目錄
 # gsma <遠端倉庫> <子模組相對路徑>：建立一個子模組，其遠端對應到指定遠端上
+# 有加入防呆，指定的遠端倉庫與當前主倉庫的一樣，會提醒修改分支
 # <遠端倉庫> 有兩種格式： <用戶/倉庫> or <倉庫位址>
 
 # gsmab 腳本：建立子模組環境，並指定分支
@@ -155,7 +157,7 @@ alias gsm='git submodule' # gsm 腳本：檢視當前倉庫中的子模組
 
 
 # 倉庫管理層級
-alias   ghpj='source ~/UserScripts/git/ghpj.zsh' # 
+alias   ghpj='source ~/UserScripts/git/ghpj.zsh' #
 alias  ghclo='gh repo clone' # 可完全取代 git clone指令，也可以直接「用戶名/倉庫名」此種參數格式下載
 alias ghinit='git init; touch README.md; git add .; git commit -m  "init"; gh repo create --private --source=. --remote=origin --push'
 alias  ghcre='gh repo create --private --source=. --remote=origin --push'

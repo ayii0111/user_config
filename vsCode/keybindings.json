@@ -355,10 +355,6 @@
     "command": "-editor.action.toggleWordWrap"
   },
   {
-    "key": "cmd+9",
-    "command": "textPowerTools.replaceNewLinesAndWhitespaceWithASingleSpace"
-  },
-  {
     "key": "shift+cmd+f",
     "command": "-workbench.action.findInFiles"
   },
@@ -445,5 +441,24 @@
     "key": "ctrl+shift+-",
     "command": "-workbench.action.navigateForward",
     "when": "canNavigateForward"
+  },
+  {
+    "key": "cmd+9",
+    "command": "extension.splitHTMLAttributes",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+a",
+    "command": "-extension.splitHTMLAttributes",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "-codeium.openChatView",
+    "when": "true"
+  },
+  {
+    "key": "cmd+8",
+    "command": "textPowerTools.replaceNewLinesAndWhitespaceWithASingleSpace"
   }
 ]
