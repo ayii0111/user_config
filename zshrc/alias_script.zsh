@@ -44,6 +44,7 @@ alias fins='source ~/UserScripts/utils/find_installed.zsh'               # 已�
 alias    c='source ~/UserScripts/utils/vscodeCLI.zsh'                   # vscode的指令改寫
 # alias   c='source ~/UserScripts/utils/cursorCLI.zsh'
 alias  sni='source ~/UserScripts/utils/sni.zsh'
+alias  ccg='c ~/UserConfig/config/Customize\ ChatGPT'  # customize chat gpt
 
 
 # scr_con 目錄
