@@ -16,6 +16,7 @@ eval "$(lua $(brew --prefix z.lua)/share/z.lua/z.lua --init zsh)"
 
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH=$PATH:$(go env GOPATH)/bin
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 export JAVA_HOME='/opt/homebrew/Cellar/openjdk/21.0.2/libexec/openjdk.jdk/Contents/Home'
 

@@ -33,6 +33,8 @@ alias                 vtail='source ~/UserScripts/vite/vtail.zsh'
 alias                   vcf='source ~/UserScripts/vite/vue-clerk&firebase.zsh'
 alias        getMatchedFile='source ~/UserScripts/vite/getMatchedFile.zsh'                 # 用來確認指定檔案是存在.js 或 .ts
 alias snippetInsertMainfile='source ~/UserScripts/vite/snippetInsertMainfile.zsh'
+alias               cfsyn='source ~/UserScripts/vite/cfsyn.zsh'
+
 
 
 

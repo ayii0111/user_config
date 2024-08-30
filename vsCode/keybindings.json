@@ -636,5 +636,9 @@
     "key": "cmd+k cmd+4",
     "command": "-editor.foldLevel4",
     "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+r",
+    "command": "code-runner.run"
   }
 ]

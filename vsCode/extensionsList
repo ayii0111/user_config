@@ -2,6 +2,7 @@ akamud.vscode-theme-onedark
 alefragnani.bookmarks
 alefragnani.project-manager
 amazonwebservices.codewhisperer-for-command-line-companion
+andersnm.sourcemap-helper
 arturodent.problems-copy
 bernardodsanderson.theme-material-neutral
 bmalehorn.shell-syntax
@@ -28,8 +29,8 @@ donjayamanne.typescript-notebook
 drcika.apc-extension
 dsalex1.vue-extract-component
 editorconfig.editorconfig
+eliostruyf.vscode-typescript-exportallmodules
 ellreka.tailwindcss-highlight
-esbenp.prettier-vscode
 fittentech.fitten-code
 formulahendry.auto-rename-tag
 formulahendry.code-runner
@@ -54,12 +55,13 @@ mattpocock.ts-error-translator
 metabob.metabob
 mguellsegarra.highlight-on-copy
 mhutchie.git-graph
+mkhl.shfmt
 moalamri.inline-fold
 mohammadbaqer.better-folding
 ms-ceintl.vscode-language-pack-zh-hant
-ms-playwright.playwright
 ms-vscode.extension-test-runner
 ms-vscode.js-debug-nightly
+mylesmurphy.prettify-ts
 naumovs.color-highlight
 nicoespeon.abracadabra
 pkief.material-icon-theme
@@ -69,6 +71,7 @@ qcz.text-power-tools
 rbbit.typescript-hero
 redjue.git-commit-plugin
 ritwickdey.liveserver
+rogalmic.zsh-debug
 rokoroku.vscode-theme-darcula
 ryu1kn.partial-diff
 semanticdiff.semanticdiff
@@ -77,6 +80,7 @@ sleistner.vscode-fileutils
 solnurkarim.html-to-css-autocompletion
 spywhere.guides
 stylelint.vscode-stylelint
+suncappedgames.typescript-fold
 tinkertrain.theme-panda
 usernamehw.errorlens
 usernamehw.remove-empty-lines

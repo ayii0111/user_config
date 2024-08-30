@@ -70,10 +70,10 @@
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[vue]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "Vue.volar"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -91,7 +91,8 @@
   "liveServer.settings.donotShowInfoMsg": true, // liveServer插件不要跳提醒
   "code-runner.clearPreviousOutput": true, // code-runner插件,會在運行代碼時,清除掉上次運行的結果
   "code-runner.executorMapByGlob": {
-    "*.zsh": "zsh"
+    "*.zsh": "zsh",
+    "*.ts": "tsx"
   },
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1",
@@ -372,4 +373,11 @@
     "error"
   ],
   "errorLens.enabled": true,
+  "shfmt.executablePath": "/Users/ayii/go/bin/shfmt",
+  "shfmt.executableArgs": [
+    "-ci"
+  ],
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  }
 }
