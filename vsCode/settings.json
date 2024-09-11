@@ -1,5 +1,5 @@
 {
-  // ---------- 基本設定 ----------
+  // ------------------------------- 基本設定 -------------------------------
   "update.mode": "none", // 不要自動更新
   "editor.fontSize": 16, // 編輯器的字形大小
   "editor.tabSize": 2, // tab設定為 2空格
@@ -17,7 +17,7 @@
   "workbench.preferredDarkColorTheme": "Ghost Shell", // 配置亮色主題
   "workbench.preferredLightColorTheme": "Solarized Light", // 配置暗色主題
   "window.autoDetectColorScheme": true, // 自動偵測白天夜晚模式
-  // ---------- 編輯器的配置 ----------
+  // ------------------------------- 編輯器的配置 -------------------------------
   "workbench.editor.focusRecentEditorAfterClose": false, // 關閉編輯器標籤時,會聚焦於上一個使用的標籤
   "workbench.editor.tabSizing": "shrink", // 編輯器標籤會隨著空間不夠而縮小
   "workbench.editor.pinnedTabSizing": "compact", // 標籤尺寸配置
@@ -30,7 +30,7 @@
   "git.openRepositoryInParentFolders": "never", // 不會在上層目錄找 git 儲存庫
   "editor.stickyScroll.enabled": false, // 黏性滾動
   "editor.lightbulb.enabled": "off", // 關閉快速修復提示
-  // ---------- 代碼補全提示 ----------
+  // ------------------------------- 代碼補全提示 -------------------------------
   "tabnine.experimentalAutoImports": true, // tabnine插件,自動引入模組
   "javascript.suggest.completeFunctionCalls": true, // 自動補全函式時,一併補全括號
   "typescript.suggest.completeFunctionCalls": true, // 自動補全函式時,一併補全括號
@@ -44,14 +44,20 @@
     "lang": "zh-Hant-TW",
     "charset": "UTF-8"
   }, // 使用!代碼片段時,lang的設定,以及其他設定
-  // diff 插件配置
-  "semanticdiff.closeOriginalTab": true, // 指定切換到 SemanticDiff 時是否應關閉原始 diff 選項卡
-  // ---------- 終端配置 ----------
+  "semanticdiff.closeOriginalTab": true, // SemanticDiff 插件：指定切換到 SemanticDiff 時是否應關閉原始 diff 選項卡
+  // ------------------------------- 終端配置 -------------------------------
   "terminal.integrated.fontFamily": "MesloLGS NF", // PowerlevelXk 系列的字體,給終端主題使用的
   "terminal.integrated.fontSize": 14, // 終端機字體大小
-  // ---------- shell語言配置 ----------
+  // ------------------------------- shell語言配置 -------------------------------
   "shell-syntax.defaultShell": "zsh", // shell-syntax插件設定
-  // ---------- 格式化配置 begin ----------
+  "shfmt.executablePath": "/Users/ayii/go/bin/shfmt",
+  "shfmt.executableArgs": [
+    "-ci" // zsh 借鏡使用的配置
+  ],
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  // ------------------------------- 格式化配置  -------------------------------
   "editor.formatOnSave": true, // formatOnSave 儲存時自動格式化
   "files.autoSave": "afterDelay", // 延時自動儲存
   "files.autoSaveDelay": 5000, // 延時設定毫秒
@@ -60,16 +66,6 @@
   }, // 所有lint類型插件,可在儲存時自動修復錯誤
   "javascript.format.semicolons": "remove", // 移除js語句的分號
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true, // 在函數名後面加上括號,類似這種形式 foo () {}
-  // ---------- prettier配置(暫不安裝) ----------
-  "prettier.semi": false, // 移除prettier的分號
-  // "prettier.trailingComma": "none", // 移除prettier的尾逗號
-  "prettier.singleQuote": true, // 使用單引號
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "prettier.bracketSameLine": true, // html的「>」不作為行開頭
-  // ---------- prettier配置（結束） ----------
   "eslint.validate": [
     "javascript",
     "typescript",
@@ -93,7 +89,16 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  // ---------- 格式化配置 end ----------
+  // NOTE:  prettier配置(暫不安裝)
+  "prettier.semi": false, // 移除prettier的分號
+  // "prettier.trailingComma": "none", // 移除prettier的尾逗號
+  "prettier.singleQuote": true, // 使用單引號
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.bracketSameLine": true, // html的「>」不作為行開頭
+  // ------------------------------- 代碼執行、預覽 -------------------------------
   "liveServer.settings.donotShowInfoMsg": true, // liveServer插件不要跳提醒
   "code-runner.clearPreviousOutput": true, // code-runner插件,會在運行代碼時,清除掉上次運行的結果
   "code-runner.executorMapByGlob": {
@@ -105,14 +110,10 @@
     "CW_NEW_SESSION": "1",
     "Q_NEW_SESSION": "1"
   },
-  "workbench.colorTheme": "Solarized Light", // 套用主題
-  "workbench.iconTheme": "material-icon-theme", // icon主題插件
-  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
-    "cypress": false,
-    "live-server-extension": true,
-    "live-preview-extension": true
-  }, // console-ninja插件設定
-  // ---------- stylelint配置 begin ----------
+  // ------------------------------- 左側欄 -------------------------------
+  "workbench.colorTheme": "Solarized Light", // 檔案欄位的主體
+  "workbench.iconTheme": "material-icon-theme", // 檔案欄位的目錄 icon
+  // ------------------------------- stylelint 插件配置 -------------------------------
   "stylelint.configFile": ".stylelintrc.js", // stylelint套件,使用專案中的設定檔
   // 以下關閉vscode內建的樣式靜態檢查
   "css.validate": false,
@@ -122,8 +123,7 @@
     "scss",
     "vue"
   ], // 打開stylelint插件的樣式檢查
-  // ---------- stylelint配置 end ----------
-  // ---------- explicit Folding 插件配置 begin ----------
+  // ------------------------------- explicit Folding 插件配置 begin -------------------------------
   "editor.foldingStrategy": "auto",
   // "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding", // 預設不要使用 explicitFolding 插件，否則沒設定的檔案都沒有摺疊規則
   "explicitFolding.rules": {
@@ -161,12 +161,12 @@
     ]
   }, // 摺疊後僅會有一行
   "html.format.wrapLineLength": 0, // 內建html格式化時,不限制一行的長度
-  "htmltagwrap.tag": "？", // htmltagwrap插件的包裹標籤
+  "htmltagwrap.tag": "？", // htmltagwrap插件: 指定預設包裹標籤
   "cssPeek.peekToExclude": [
     ".history",
     "node_modules"
-  ], // cssPeek插件,排除歷史目錄與node模組的文件
-  // ---------- peacock插件配置 begin ----------
+  ], // cssPeek插件：除歷史目錄與node模組的文件
+  // ------------------------------- peacock插件配置 begin -------------------------------
   "peacock.affectTitleBar": false, // 上方邊條不套用peacock插件效果
   // 可設定目錄名稱顏色
   "peacock.favoriteColors": [
@@ -207,7 +207,7 @@
       "value": "#42b883"
     }
   ],
-  // ---------- peacock插件配置 end ----------
+  // ------------------------------- peacock插件配置 end -------------------------------
   "folder-path-color.folders": [
     {
       "path": "node_modules",
@@ -220,7 +220,7 @@
     "bookmarks.lineBorder": "#FF0000", // 標籤行上框線
     "bookmarks.overviewRuler": "#157EFB88" // 左側欄書籤顏色設定
   },
-  // ---------- Apc 插件配置 ----------
+  // ------------------------------- Apc 插件配置 -------------------------------
   // 左邊欄位格式不見就執行指令：Enable Apc extension
   "apc.activityBar": {
     // "position": "bottom",
@@ -243,7 +243,7 @@
     "height": 30,
     "fontSize": 14
   }, // 設定列表的高度和字體大小
-  // ---------- animations 插件配置  ----------
+  // ------------------------------- animations 插件配置  -------------------------------
   // 鼠標動畫不見就執行指令：Animations: Install Animations
   // 若執行無效，就先執行：Enable Apc extension
   "animations.Enabled": true, // 啟用動畫
@@ -262,17 +262,7 @@
     "Scrolling": 300,
     "Active": 150
   },
-  // ---------- turboConsoleLog 插件配置  ----------
-  "turboConsoleLog.delimiterInsideMessage": "",
-  "turboConsoleLog.logMessageSuffix": "：",
-  "turboConsoleLog.insertEnclosingFunction": false,
-  "turboConsoleLog.logMessagePrefix": "💊 變數",
-  "security.workspace.trust.untrustedFiles": "newWindow",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  // 為因應 Path Intellisense 插件的路徑感知功能，而關閉 vscode 內建的路徑提示功能
-  "typescript.suggest.paths": false, // 關閉默認的 typescript 引用路徑提示
-  "javascript.suggest.paths": false,
-  // ---------- 優質檔案摺疊配置  ----------
+  // ------------------------------- antfu 的優質檔案摺疊配置  -------------------------------
   // updated 2024-07-13 10:16
   // https://github.com/antfu/vscode-file-nesting-config
   "explorer.fileNesting.enabled": true,
@@ -364,13 +354,16 @@
     "*.w": "$(capture).*.w, I$(capture).w",
     "*.xaml": "$(capture).xaml.cs"
   },
-  // highlightOnCopy 插件的顏色配置
-  "highlightOnCopy.backgroundColor": "rgba(173, 216, 230, 0.8)",
-  "fittencode.languagePreference.displayPreference": "zh-cn",
+  "highlightOnCopy.backgroundColor": "rgba(173, 216, 230, 0.8)", // highlightOnCopy 插件的顏色配置
+  "fittencode.languagePreference.displayPreference": "zh-cn", // fittencode 插件 AI Coding
   "fittencode.languagePreference.commentPreference": "zh-cn",
-  "totalTypeScript.hideAllTips": false,
-  "totalTypeScript.hideBasicTips": true,
-  "console-ninja.featureSet": "Community",
+  // ------------------------------- debug、error 管理 -------------------------------
+  "console-ninja.featureSet": "Community", // console-ninja 插件：console.log 直接顯示
+  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+    "cypress": false,
+    "live-server-extension": true,
+    "live-preview-extension": true
+  }, // console-ninja插件設定
   "debug.onTaskErrors": "debugAnyway",
   "errorLens.enabledDiagnosticLevels": [
     "warning",
@@ -378,14 +371,17 @@
     "error"
   ],
   "errorLens.enabled": true,
-  "shfmt.executablePath": "/Users/ayii/go/bin/shfmt",
-  "shfmt.executableArgs": [
-    "-ci" // zsh 借鏡使用的配置
-  ],
-  "[shellscript]": {
-    "editor.defaultFormatter": "mkhl.shfmt"
-  },
-  // -------------------------------- TODO Highlight v2 插件 --------------------------------
+  // ------------------------------- turboConsoleLog 插件配置  -------------------------------
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "turboConsoleLog.logMessageSuffix": "：",
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "turboConsoleLog.logMessagePrefix": "💊 變數",
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // 為因應 Path Intellisense 插件的路徑感知功能，而關閉 vscode 內建的路徑提示功能
+  "typescript.suggest.paths": false, // 關閉默認的 typescript 引用路徑提示
+  "javascript.suggest.paths": false,
+  // ------------------------------- TODO Highlight 插件 -------------------------------
   "todohighlight.exclude": [
     "**/node_modules/**",
     "**/dist/**",
@@ -401,46 +397,44 @@
   ],
   "todohighlight.keywords": [
     {
-      "text": "TODO:",
-      "regex": {
-        "pattern": "(?<=^|\"|\\s)TODO[:]?(?!\\w)"
-      },
-      "borderRadius": "6px",
+      "text": " NOTE: ",
+      "color": "#5A716A",
+      "backgroundColor": "#8CDFD6",
+      "borderRadius": "8px", // 圓角
     },
     {
-      "text": "WARNING:",
-      "regex": {
-        "pattern": "(?<=^|\"|\\s)WARNING[:]?(?!\\w)"
-      },
-      "borderRadius": "6px",
+      "text": " ERROR: ",
+      "color": "#456990",
+      "backgroundColor": "#F45B69",
+      "borderRadius": "8px", // 圓角
     },
     {
-      "text": "INFO:",
-      "regex": {
-        "pattern": "(?<=^|\"|\\s)INFO[:]?(?!\\w)"
-      },
-      "borderRadius": "6px",
+      "text": " BUG: ",
+      "backgroundColor": "#CACAAA",
+      "borderRadius": "8px", // 圓角
     },
     {
-      "text": "FIXME:",
-      "regex": {
-        "pattern": "(?<=^|\"|\\s)FIXME[:]?(?!\\w)"
-      },
-      "borderRadius": "6px",
+      "text": " TODO: ",
+      "backgroundColor": "#EEC584",
+      "borderRadius": "8px", // 圓角
     },
     {
-      "text": "REVIEW:",
-      "regex": {
-        "pattern": "(?<=^|\"|\\s)REVIEW[:]?(?!\\w)"
-      },
-      "borderRadius": "6px",
+      "text": "✞✞✞",
+      "color": "#C8AB83",
+      "backgroundColor": "rgba(0,0,0,0)", // 背景顏色透明 (最後一個參數為 0，表示透明度)
+      "border": "1px solid #C8AB83", // 設置 1 像素的紅色實線邊框
+      "borderRadius": "8px", // 圓角
+      "isWholeLine": true, // 僅高亮文字，不高亮整行
+      "diagnosticSeverity": "none"
     },
     {
-      "text": "NOTE:",
-      "regex": {
-        "pattern": "(?<=^|\"|\\s)NOTE[:]?(?!\\w)"
-      },
-      "borderRadius": "6px",
-    },
+      "text": "------------------------------",
+      "color": "#6DC0D5",
+      "backgroundColor": "rgba(0,0,0,0)", // 背景顏色透明 (最後一個參數為 0，表示透明度)
+      "border": "1px solid #6DC0D5", // 設置 1 像素的紅色實線邊框
+      "borderRadius": "8px", // 圓角
+      "isWholeLine": true, // 僅高亮文字，不高亮整行
+      "diagnosticSeverity": "none"
+    }
   ],
 }
