@@ -60,23 +60,29 @@
   }, // 所有lint類型插件,可在儲存時自動修復錯誤
   "javascript.format.semicolons": "remove", // 移除js語句的分號
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true, // 在函數名後面加上括號,類似這種形式 foo () {}
+  // ---------- prettier配置(暫不安裝) ----------
   "prettier.semi": false, // 移除prettier的分號
   // "prettier.trailingComma": "none", // 移除prettier的尾逗號
   "prettier.singleQuote": true, // 使用單引號
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.bracketSameLine": true, // html的「>」不作為行開頭
+  // ---------- prettier配置（結束） ----------
   "eslint.validate": [
     "javascript",
     "typescript",
     "vue"
   ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -154,7 +160,6 @@
       }
     ]
   }, // 摺疊後僅會有一行
-  "prettier.bracketSameLine": true, // html的「>」不作為行開頭
   "html.format.wrapLineLength": 0, // 內建html格式化時,不限制一行的長度
   "htmltagwrap.tag": "？", // htmltagwrap插件的包裹標籤
   "cssPeek.peekToExclude": [
@@ -375,9 +380,67 @@
   "errorLens.enabled": true,
   "shfmt.executablePath": "/Users/ayii/go/bin/shfmt",
   "shfmt.executableArgs": [
-    "-ci"
+    "-ci" // zsh 借鏡使用的配置
   ],
   "[shellscript]": {
     "editor.defaultFormatter": "mkhl.shfmt"
-  }
+  },
+  // -------------------------------- TODO Highlight v2 插件 --------------------------------
+  "todohighlight.exclude": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/out/**",
+    "**/bower_components/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/vscode-darwin-arm64-1.92.2/**",
+    "**/*.min.*",
+    "**/*.map"
+  ],
+  "todohighlight.keywords": [
+    {
+      "text": "TODO:",
+      "regex": {
+        "pattern": "(?<=^|\"|\\s)TODO[:]?(?!\\w)"
+      },
+      "borderRadius": "6px",
+    },
+    {
+      "text": "WARNING:",
+      "regex": {
+        "pattern": "(?<=^|\"|\\s)WARNING[:]?(?!\\w)"
+      },
+      "borderRadius": "6px",
+    },
+    {
+      "text": "INFO:",
+      "regex": {
+        "pattern": "(?<=^|\"|\\s)INFO[:]?(?!\\w)"
+      },
+      "borderRadius": "6px",
+    },
+    {
+      "text": "FIXME:",
+      "regex": {
+        "pattern": "(?<=^|\"|\\s)FIXME[:]?(?!\\w)"
+      },
+      "borderRadius": "6px",
+    },
+    {
+      "text": "REVIEW:",
+      "regex": {
+        "pattern": "(?<=^|\"|\\s)REVIEW[:]?(?!\\w)"
+      },
+      "borderRadius": "6px",
+    },
+    {
+      "text": "NOTE:",
+      "regex": {
+        "pattern": "(?<=^|\"|\\s)NOTE[:]?(?!\\w)"
+      },
+      "borderRadius": "6px",
+    },
+  ],
 }
