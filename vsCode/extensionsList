@@ -1,5 +1,4 @@
 akamud.vscode-theme-onedark
-alefragnani.bookmarks
 alefragnani.project-manager
 amazonwebservices.codewhisperer-for-command-line-companion
 andersnm.sourcemap-helper
@@ -51,7 +50,6 @@ lujiejie.smart-select
 lukegeneva.auto-collapse-explorer
 maggie.eslint-rules-zh-plugin
 mariusalchimavicius.json-to-ts
-mattpocock.ts-error-translator
 metabob.metabob
 mguellsegarra.highlight-on-copy
 mhutchie.git-graph
@@ -90,6 +88,7 @@ vue.volar
 waldo.crs-al-language-extension
 wallabyjs.console-ninja
 wallabyjs.quokka-vscode
+wayou.vscode-todo-highlight
 wware.snippet-creator
 yoavbls.pretty-ts-errors
 zokugun.explicit-folding
