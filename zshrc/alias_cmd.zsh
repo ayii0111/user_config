@@ -8,7 +8,6 @@ alias lsa='eza -a -1 --icons -s new'
 alias mk='mkdir -p'
 alias man='tldr'
 alias l='clear'
-alias -g g='| grep'
 
 # Dirs
 alias ..='cd ..'

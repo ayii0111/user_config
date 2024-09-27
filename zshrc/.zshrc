@@ -21,7 +21,9 @@ source ~/UserConfig/zshrc/zshrc_end.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-PATH=~/.console-ninja/.bin:$PATH
+
 
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+
+PATH=~/.console-ninja/.bin:$PATH

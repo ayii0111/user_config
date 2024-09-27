@@ -434,7 +434,14 @@
       "border": "1px solid #6DC0D5", // 設置 1 像素的紅色實線邊框
       "borderRadius": "8px", // 圓角
       "isWholeLine": true, // 僅高亮文字，不高亮整行
-      "diagnosticSeverity": "none"
+      "diagnosticSeverity": "none",
     }
   ],
+  "Codegeex.Privacy": true,
+  "vue.format.template.initialIndent": false,
+  "cursor.cpp.enablePartialAccepts": true,
+  "cursor.chat.defaultNoContext": true,
+  "cursor.chat.smoothStreaming": true,
+  "cursor.chat.showSuggestedFiles": true,
+  "cursor.chat.collapseInputBoxPills": true,
 }
