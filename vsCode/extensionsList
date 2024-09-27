@@ -1,6 +1,7 @@
 akamud.vscode-theme-onedark
 alefragnani.project-manager
 amazonwebservices.codewhisperer-for-command-line-companion
+aminer.codegeex
 andersnm.sourcemap-helper
 arturodent.problems-copy
 bernardodsanderson.theme-material-neutral
@@ -30,11 +31,11 @@ dsalex1.vue-extract-component
 editorconfig.editorconfig
 eliostruyf.vscode-typescript-exportallmodules
 ellreka.tailwindcss-highlight
-fittentech.fitten-code
 formulahendry.auto-rename-tag
 formulahendry.code-runner
 gencer.html-slim-scss-css-class-completion
 glenn2223.live-sass
+guodongsun.vscode-git-cruise
 humao.rest-client
 ipatalas.vscode-postfix-ts
 jakearl.search-editor-apply-changes
@@ -49,7 +50,6 @@ linhusp.ghost-shell
 lujiejie.smart-select
 lukegeneva.auto-collapse-explorer
 maggie.eslint-rules-zh-plugin
-mariusalchimavicius.json-to-ts
 metabob.metabob
 mguellsegarra.highlight-on-copy
 mhutchie.git-graph
@@ -63,11 +63,9 @@ mylesmurphy.prettify-ts
 naumovs.color-highlight
 nicoespeon.abracadabra
 pkief.material-icon-theme
+pomber.git-file-history
 poorchop.theme-darktooth
-pranaygp.vscode-css-peek
 qcz.text-power-tools
-rbbit.typescript-hero
-redjue.git-commit-plugin
 ritwickdey.liveserver
 rogalmic.zsh-debug
 rokoroku.vscode-theme-darcula
@@ -85,7 +83,6 @@ usernamehw.remove-empty-lines
 visbydev.folder-path-color
 vsls-contrib.gistfs
 vue.volar
-waldo.crs-al-language-extension
 wallabyjs.console-ninja
 wallabyjs.quokka-vscode
 wayou.vscode-todo-highlight

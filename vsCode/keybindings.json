@@ -95,16 +95,16 @@
     "command": "-console.log.wrap",
     "when": "editorTextFocus"
   },
-  {
-    "key": "tab",
-    "command": "-acceptSelectedSuggestion",
-    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "tab",
-    "command": "-insertNextSuggestion",
-    "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
-  },
+  // {
+  //   "key": "tab",
+  //   "command": "-acceptSelectedSuggestion",
+  //   "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  // },
+  // {
+  //   "key": "tab",
+  //   "command": "-insertNextSuggestion",
+  //   "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+  // },
   {
     "key": "shift+cmd+s",
     "command": "-workbench.action.files.saveAs"
@@ -256,7 +256,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "cmd+l",
+    "key": "alt+l",
     "command": "vscode-better-align.align",
     "when": "editorTextFocus"
   },
@@ -640,5 +640,35 @@
   {
     "key": "cmd+r",
     "command": "code-runner.run"
+  },
+  {
+    "key": "f2",
+    "command": "-abracadabra.renameSymbol",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+r cmd+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-codegeex.expandInlineChat",
+    "when": "codegeex.enableComment"
+  },
+  {
+    "key": "cmd+, ,",
+    "command": "workbench.action.openSettings"
+  },
+  {
+    "key": "cmd+,",
+    "command": "-workbench.action.openSettings"
+  },
+  {
+    "key": "cmd+, .",
+    "command": "workbench.action.openSettingsJson"
+  },
+  {
+    "key": "cmd+, k",
+    "command": "workbench.action.openGlobalKeybindings"
   }
 ]

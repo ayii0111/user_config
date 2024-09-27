@@ -25,7 +25,10 @@ export default antfu(
       'curly': ['error', 'multi-line'], // 這個要設定要加大括號，才能與 if 擠一行（莫名其妙）
       'style/max-statements-per-line': 0, // 限制每行的 statement 數量
       'no-unused-expressions': 0, // 可以僅使用「條件式 ? true: null 而不會報錯」
-      'no-extra-boolean-cast': 0,
+      'no-extra-boolean-cast': 0, // 可以使用 !! 的條件式
+      'vue/valid-attribute-name': 0, // 單元素綁定多事件
+      'vue/first-attribute-linebreak': 0, // 元素中屬性不強制換行
+      'vue/no-unused-refs': 0, // 使用 ref 屬性，但未宣告 ref 屬性值的變數，會報錯
     },
   },
 )
