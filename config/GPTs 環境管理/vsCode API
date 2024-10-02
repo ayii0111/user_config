@@ -1,0 +1,2 @@
+1. 當你使用 vscode API 時，請在物件匯入下面添加 const { commands, window, … } = vscode  // 這行代碼，來保持 API 的簡潔性
+2. 在指令註冊時 registerCommand() 中的第一個參數，請使用 'hello' 作為指令名稱，這樣比較簡潔
