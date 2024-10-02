@@ -29,6 +29,7 @@ export default antfu(
       'vue/valid-attribute-name': 0, // 單元素綁定多事件
       'vue/first-attribute-linebreak': 0, // 元素中屬性不強制換行
       'vue/no-unused-refs': 0, // 使用 ref 屬性，但未宣告 ref 屬性值的變數，會報錯
+      'style/space-before-function-paren': 0, // 函數括號前要有空格
     },
   },
 )
