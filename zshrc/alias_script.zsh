@@ -3,3 +3,4 @@
 source ~/UserScripts/zsh_hook/preec.zsh
 source ~/UserScripts/env.zsh
 source ~/UserScripts/initAlias.zsh
+# source ~/UserScripts/zle_tools/zle.zsh

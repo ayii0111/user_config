@@ -18,12 +18,14 @@ alias nv='nvim'
 alias rst='mac restart'                                                 # mac 重開機
 alias lo="osascript -e 'tell application \"System Events\" to log out'" # mac 登出
 alias cpf='pbcopy <'                                                    # 複製檔案內容
-alias -g cpo='| pbcopy'                                                 # 複製指令輸出
 alias zb='z -b'                                                         # z 的退回祖輩目錄
+alias cdn='cd "$(/bin/ls -td -- */ | head -n 1)"'                       # cd 到最近建立的目錄
+alias m='micro'                                                         # 文本編輯器
+alias ytd='/opt/homebrew/Caskroom/miniforge/base/bin/yt-dlp'            # yt 下載
 alias -g peco='| /opt/homebrew/bin/peco'                                # grep強化版，可篩選輸出結果
+alias -g cpo='| pbcopy'                                                 # 複製指令輸出
+# alias -g SaveOput=" --color=always 2>&1 | tee >(sed 's/\x1b\[[0-9;]*m//g' > /tmp/lastOput.txt)" # 自動儲存當前指令輸出
 # alias     con='conda'
-alias ytd='/opt/homebrew/Caskroom/miniforge/base/bin/yt-dlp'
-alias m='micro' # 文本編輯器
 
 # tmux (目前沒在用)
 # alias tm='tmux'
